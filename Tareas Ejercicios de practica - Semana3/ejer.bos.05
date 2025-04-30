@@ -1,0 +1,9 @@
+Algoritmo calular
+	Definir resultado como logico
+	//((8 > 2) O (932 < 23) ) Y 4 == 2
+	resultado = ((8 > 2) O (932 < 23) ) Y 4 = 2
+	Escribir "((8 > 2) O (932 < 23) ) Y 4 = 2"
+	Escribir " ( ", (8 > 2) ," O ", (932 < 23) , " ) ", " Y ", 4 = 2
+	Escribir ( (8 > 2)  O  (932 < 23) ), " Y ", 4 = 2
+	Escribir ( (8 > 2)  O  (932 < 23) ) Y 4 = 2
+FinAlgoritmo

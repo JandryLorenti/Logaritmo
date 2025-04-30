@@ -1,0 +1,11 @@
+Algoritmo Calculo
+		Definir Resultado como real
+		//2 (4 - 10 + 8)/2 36 *((1+2)/2) Resolver las parentesis
+		Resultado = 2 * (4 - 10 + 8) / 2 * 36 * ((1+2) /2)
+		Escribir "2 (4 - 10 + 8)/2 36 *((1+2)/2)"
+		Escribir "2 * ", (4-10+8), " / 2 * ", " 36 * ", " (( ",1+2 , " /2) "
+		Escribir 2 * (4-10+8) / 2 ,"* 36 ", "* ", ((1+2)/2)
+		Escribir 2 * (4-10+8) /  2 * 36, "* ",((1+2)/2)
+		Escribir 2 * (4-10+8) / 2 * 36 * ((1+2)/2)
+FinAlgoritmo
+	

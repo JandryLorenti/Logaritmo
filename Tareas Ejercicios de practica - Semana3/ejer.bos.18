@@ -1,0 +1,18 @@
+Algoritmo calculado
+	// Solicitar al usuario el precio de un producto y el porcentaje de descuento aplicado. Calcular y mostrar el precio final luego de aplicar el descuento siempre cuando el 
+	// precio sea mayor $100.
+	Definir precio_producto, porcentaje, descuento_aplicado Como Real
+	Definir precio_final Como Real
+	Escribir "Ingrese el precio del producto"
+	Leer precio_producto
+	Escribir "Ingrese el porcentaje de descuento"
+	Leer porcentaje
+	porcentaje=porcentaje/100
+	si precio_producto > 100 Entonces
+		descuento_aplicado=porcentaje*precio_producto
+		precio_final=precio_producto-descuento_aplicado
+		Escribir "El precio final luego de aplicar el descuento es: ", precio_final
+	SiNo
+		Escribir "El precio final (sin descuento) es: ", precio_producto
+	FinSi
+FinAlgoritmo

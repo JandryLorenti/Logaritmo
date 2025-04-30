@@ -1,0 +1,48 @@
+Algoritmo calculo
+	//Una tienda en línea "AlgoritmoX", ha decidido ajustar los límites de descuento para diferentes tipos de clientes, con el objetivo de aumentar las 
+	//ventas. El descuento actual para todos los clientes es de 10%. La política de ajuste de límites de descuento es la siguiente: 
+	//Si un cliente pertenece al tipo A o es discapacitado, el aumento en el límite de descuento será un 20% sumado al valor que tiene. 
+	//Si pertenece al tipo B y no es discapacitado, el aumento será un 15% sumado al valor que tiene. 
+	//Para clientes del tipo C, el aumento será un 10% sumado al valor que tiene. 
+	//Para cualquier otro tipo de cliente, no habrá aumento de descuento. 
+	//Se necesita desarrollar un algoritmo que una vez que se ingrese el tipo de cliente, el total de la venta y un status de discapacitado o no. Se pide aplicar el 
+    //nuevo límite de descuento a la venta realizada, considerando el 15% del IVA. 
+	//Deberá presentar el nombre del cliente, la total venta, el porcentaje del 
+	//descuento obtenido, el valor del descuento de la venta, el valor calculado del IVA y el total a pagar. 
+	Definir nombre, discapacidad, tipodecliente Como Caracter
+	//Se define el nombre si tiene o no discapacidad y que tipo de cliente es
+	definir limites_descuento, descuento_actual, totalcompra, descuentoaplicado, iva, totalpagar Como Real
+	//Se define el limite de descudento el descuento total el total de compra el descento aplicado el iva y el total a pagar
+	descuento_actual=0.10
+	Escribir "Ingrese su nombre"
+	Leer nombre
+	Escribir "Ingrese el total de su compra"
+	leer totalcompra
+	Escribir "Usted es discapacitado? (Si/No): "
+	Leer discapacidad
+	Escribir "Ingrese tipo de cliente (A, B, C u otro): "
+	leer tipodecliente
+	si tipodecliente = "A" O discapacidad = "Si" Entonces
+		descuento_actual=descuento_actual+0.20
+	sino
+		si tipodecliente = "B" Y discapacidad = "No" Entonces
+			descuento_actual=descuento_actual+0.15
+		SiNo
+			si tipodecliente = "C" Entonces
+				descuento_actual=descuento_actual+0.10
+			SiNo
+			FinSi
+		FinSi
+	FinSi
+	descuentoaplicado=totalcompra*descuento_actual
+	limites_descuento=totalcompra-descuentoaplicado
+	iva=limites_descuento*0.15
+	totalpagar=limites_descuento+iva
+	//Se realizan las operaciones necesiaras para resolver el problema
+	Escribir "Nombre del cliente: ", nombre
+	Escribir "Total de la venta es: ", totalcompra
+	Escribir "descuento aplicado: ", descuentoaplicado
+	Escribir "IVA calculado: ", iva
+	Escribir "Total a pagar: ", totalpagar
+	//Al final se escriben todos los valores para que al final salgan presentados aplicando los descuentos
+FinAlgoritmo

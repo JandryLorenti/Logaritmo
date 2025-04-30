@@ -1,0 +1,10 @@
+Algoritmo calculo
+	definir resultado Como Real
+	//260 / 12 + 54 % 3 - 85 % 7 ^ 2 + abs(-1)
+	resultado = 260 / 12 + 54 mod 3 - 85 mod 7 ^ 2 + abs(-1)
+	Escribir "260 / 12 + 54 mod 3 - 85 mod 7 ^ 2 + abs(-1)"
+	Escribir "260 / 12  + 54 mod 3 - 85 mod ", 7 ^ 2 ," + ", abs(-1)
+	Escribir 260 / 12 ," + 54 mod 3 - 85 mod ", 7 ^ 2, " + ", abs(-1)
+	Escribir 260 / 12 ," + " ,54 mod 3 ," - " ,85 mod 7 ^ 2, " + ", abs(-1)
+	Escribir 260 / 12  +  54 mod 3 - 85 mod 7 ^ 2 + abs(-1)
+FinAlgoritmo

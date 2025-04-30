@@ -1,0 +1,14 @@
+Algoritmo CompararConDiez
+	//Pedir al usuario un número y mostrar si es mayor o menor que 10
+    Definir numero Como Real
+    Escribir "Ingrese un número:"
+    Leer numero
+    Si numero > 10 Entonces
+        Escribir "El número ", numero, " es MAYOR que 10"
+    Sino Si numero < 10 Entonces
+			Escribir "El número ", numero, " es MENOR que 10"
+		Sino
+			Escribir "El número es IGUAL a 10"
+		FinSi
+	FinSi	
+FinAlgoritmo
